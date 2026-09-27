@@ -1,2 +1,45 @@
-HTML
-SUSHI SPORT
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SUSHI SPORT Content</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:720px;margin:0 auto;padding:24px;background:#f6f6f6;color:#111}
+.card{background:#fff;border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 2px 12px #00000012}
+h1{margin:0 0 8px}.muted{color:#666}.btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:#111;color:#fff;font-size:16px;margin-top:12px}
+input,textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #ddd;border-radius:10px;margin-top:8px}
+.status{padding:10px;border-radius:10px;background:#f0f0f0;margin-top:12px}
+a{color:#111}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>SUSHI SPORT Content</h1>
+<p class="muted">Chuẩn bị và xuất bản nội dung thể thao lên TikTok.</p>
+<button class="btn" id="login">Kết nối TikTok</button>
+<div class="status" id="status">Chưa kết nối tài khoản TikTok.</div>
+</div>
+
+<div class="card">
+<h2>Chuẩn bị nội dung</h2>
+<label>Video</label>
+<input type="file" accept="video/mp4,video/quicktime">
+<label>Caption</label>
+<textarea rows="4" placeholder="Nhập caption và hashtag..."></textarea>
+<button class="btn" id="publish">Đăng lên TikTok</button>
+<div class="status">Flow dự kiến: Kết nối TikTok → cấp quyền → chuẩn bị nội dung → xác nhận → đăng.</div>
+</div>
+
+<div class="card">
+<strong>Thông tin</strong><br><br>
+<a href="privacy-policy.html">Privacy Policy</a> ·
+<a href="terms-of-service.html">Terms of Service</a>
+</div>
+
+<script>
+document.getElementById('login').onclick=()=>alert('TikTok Login Kit sẽ được kết nối ở bước backend OAuth.');
+document.getElementById('publish').onclick=()=>alert('Content Posting API sẽ được kết nối sau khi OAuth backend hoạt động.');
+</script>
+</body>
+</html>
